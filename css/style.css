@@ -1001,7 +1001,14 @@ h2 {
     padding: 0;
     border: 0;
     border-radius: 50%;
+
     background: #ffffff;
+    color: black;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-fill-color: black;
+
     font-size: 32px;
     line-height: 1;
     cursor: pointer;
@@ -1331,6 +1338,10 @@ h2 {
     background: transparent;
     overflow: hidden;
     cursor: zoom-in;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .helpInfo__photo {
@@ -1338,6 +1349,10 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 22px;
+}
+
+.helpInfo__photoButton:focus {
+    outline: none;
 }
 
 .helpInfo__photoButton:focus-visible {
@@ -1400,6 +1415,13 @@ h2 {
 .helpPhotoModal__close:focus-visible {
     outline: 3px solid white;
     outline-offset: 4px;
+}
+
+.helpPhotoModal,
+.helpPhotoModal__image {
+    outline: none;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .contacts__grid {
@@ -2189,6 +2211,7 @@ h2 {
     .catNannyGallery__item {
         flex: 0 0 100%;
         overflow: visible;
+        scroll-snap-stop: always;
     }
 
     .catNannyGallery__item img {
