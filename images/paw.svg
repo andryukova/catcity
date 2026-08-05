@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520">
+  <g fill="#ffffff">
+    <ellipse cx="116" cy="155" rx="56" ry="82" transform="rotate(-28 116 155)"></ellipse>
+
+    <ellipse cx="230" cy="92" rx="60" ry="90" transform="rotate(-10 230 92)"></ellipse>
+
+    <ellipse cx="356" cy="100" rx="60" ry="90" transform="rotate(10 356 100)"></ellipse>
+
+    <ellipse cx="470" cy="165" rx="56" ry="82" transform="rotate(28 470 165)"></ellipse>
+
+    <path d="
+      M 130 382
+      C 126 295 198 234 286 234
+      C 374 234 452 294 449 382
+      C 447 454 389 488 326 470
+      C 299 462 274 462 247 470
+      C 183 489 134 454 130 382
+      Z
+    "></path>
+  </g>
+</svg>
