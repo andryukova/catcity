@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: andryukova/catcity
+  branch: main
+
+media_folder: "images/cats"
+public_folder: "images/cats"
+
+collections:
+  - name: "cats"
+    label: "Коты"
+    editor:
+      preview: false
+
+    files:
+      - label: "Карточки котов"
+        name: "cats"
+        file: "data/cats.json"
+
+        fields:
+          - label: "Список котов"
+            name: "cats"
+            widget: "list"
+
+            fields:
+
+              - label: "ID"
+                name: "id"
+                widget: "string"
+
+              - label: "Имя"
+                name: "name"
+                widget: "string"
+
+              - label: "Дата рождения"
+                name: "birthday"
+                widget: "string"
+
+              - label: "Локация"
+                name: "location"
+                widget: "select"
+                options:
+                  - label: "Кудрово"
+                    value: "kudrovo"
+
+                  - label: "Новая Голландия"
+                    value: "newHolland"
+
+              - label: "Фотография"
+                name: "image"
+                widget: "image"
+
+              - label: "Короткое описание"
+                name: "description"
+                widget: "text"
+
+              - label: "Полное описание"
+                name: "text"
+                widget: "text"
