@@ -20,4 +20,4 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home/a1158424/domains/a1158424.xsph.ru/public_html/
+          server-dir: /domains/a1158424.xsph.ru/public_html/
