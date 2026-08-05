@@ -106,7 +106,7 @@ section {
     height: 580px;
     left: 0px;
     top: 0px;
-    background: url("images/paw.svg") center / contain no-repeat;
+    background: url("../images/paw.svg") center / contain no-repeat;
     opacity: 0.08;
     transform: rotate(-25deg);
     pointer-events: none;
