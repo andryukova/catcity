@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "Commissioner";
-    src: url("fonts/Commissioner-Variable.ttf") format("truetype");
+    src: url("../fonts/Commissioner-Variable.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
