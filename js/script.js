@@ -429,6 +429,42 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        var isMobile = window.matchMedia(
+            "(max-width: 560px)"
+        ).matches;
+
+        if (isMobile) {
+            var gap = parseFloat(
+                window.getComputedStyle(nannyTrack).gap
+            ) || 0;
+
+            var itemWidth =
+                nannyItems[0].getBoundingClientRect().width;
+
+            var itemStep = itemWidth + gap;
+
+            var currentIndex = Math.round(
+                nannyTrack.scrollLeft / itemStep
+            );
+
+            var nextIndex = currentIndex + direction;
+
+            if (nextIndex >= nannyItems.length) {
+                nextIndex = 0;
+            }
+
+            if (nextIndex < 0) {
+                nextIndex = nannyItems.length - 1;
+            }
+
+            nannyTrack.scrollTo({
+                left: nextIndex * itemStep,
+                behavior: "smooth"
+            });
+
+            return;
+        }
+
         var maxScrollLeft =
             nannyTrack.scrollWidth - nannyTrack.clientWidth;
 
