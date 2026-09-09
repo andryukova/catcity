@@ -95,7 +95,9 @@ async function loadCats() {
     }
 
     try {
-        const response = await fetch('cats.json');
+        const response = await fetch('cats.json', {
+            cache: 'no-store'
+        });
 
         if (!response.ok) {
             throw new Error(
