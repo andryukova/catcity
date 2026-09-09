@@ -95,7 +95,7 @@ async function loadCats() {
     }
 
     try {
-        const response = await fetch(`data.json?v=${Date.now()}`);
+        const response = await fetch('data.json?v=1.0.1');
 
         if (!response.ok) {
             throw new Error(
