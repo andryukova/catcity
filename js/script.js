@@ -95,7 +95,7 @@ async function loadCats() {
     }
 
     try {
-        const response = await fetch('cats.json', {
+        const response = await fetch('cats.json?v=3', {
             cache: 'no-store'
         });
 
